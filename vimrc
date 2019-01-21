@@ -39,7 +39,10 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'junegunn/fzf'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-scripts/indentpython.vim'
-Bundle 'Valloric/YouCompleteMe'
+
+" Disable YCM by default as it is a super heavy dependency to carry around
+" Bundle 'Valloric/YouCompleteMe'
+
 Plugin 'vim-syntastic/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'nvie/vim-flake8'
