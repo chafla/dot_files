@@ -1,0 +1,11 @@
+Host vps
+	HostName 45.55.4.24
+	User luc
+
+Host glados
+	HostName glados.cs.rit.edu
+	User mt8093
+
+Host agam
+	HostName agamemnon.cs.rit.edu
+	user mt8093

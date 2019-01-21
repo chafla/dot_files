@@ -11,3 +11,5 @@ cp vimrc ~/.vim/.vimrc
 ln -s ~/.vim/.vimrc ~/.vimrc
 
 cp -r colors ~/.vim/colors
+
+cp ssh_config ~/.ssh/config
