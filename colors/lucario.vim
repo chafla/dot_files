@@ -15,7 +15,7 @@ endif
 let g:colors_name = "lucario"
 
 hi Cursor       cterm=NONE guifg=#2b3e50 guibg=#f8f8f2
-hi Visual       ctermfg=NONE ctermbg=16 cterm=NONE guifg=NONE guibg=#19242f gui=NONE
+hi Visual       ctermfg=NONE ctermbg=36 cterm=NONE guifg=NONE guibg=#19242f gui=NONE
 hi CursorLine   ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#405160 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#405160 gui=NONE
 hi ColorColumn  ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#405160 gui=NONE
