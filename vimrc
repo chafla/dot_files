@@ -48,6 +48,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'nvie/vim-flake8'
 Bundle 'gabrielelana/vim-markdown'
 Plugin 'badacadabra/vim-archery'
+Plugin 'reedes/vim-colors-pencil'
 
 call vundle#end()
 
@@ -61,13 +62,13 @@ nnoremap <space> za
 let g:SimpylFold_docstring_preview=1
 
 " PEP8 Compliance
-au BufNewFile,BufRead *.py set tabstop=4
-au BufNewFile,BufRead *.py set softtabstop=4
-au BufNewFile,BufRead *.py set shiftwidth=4
-au BufNewFile,BufRead *.py set textwidth=79
-au BufNewFile,BufRead *.py set expandtab
-au BufNewFile,BufRead *.py set autoindent
-au BufNewFile,BufRead *.py set fileformat=unix
+au BufNewFile,BufRead *.py,*.c,*.h set tabstop=4
+au BufNewFile,BufRead *.py,*.c,*.h set softtabstop=4
+au BufNewFile,BufRead *.py,*.c,*.h set shiftwidth=4
+au BufNewFile,BufRead *.py,*.c,*.h set textwidth=79
+au BufNewFile,BufRead *.py,*.c,*.h set expandtab
+au BufNewFile,BufRead *.py,*.c,*.h set autoindent
+au BufNewFile,BufRead *.py,*.c,*.h set fileformat=unix
 
 " Syntastic 
 set statusline+=%#warningmsg#
@@ -97,7 +98,8 @@ syntax on
 set number
 
 set t_Co=256
-let g:airline_theme='luna'
+" let g:airline_theme='luna'
+let g:airline_theme='pencil'
 colorscheme lucario
 
 filetype plugin indent on
