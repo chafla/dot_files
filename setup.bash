@@ -18,6 +18,9 @@ cp -r colors ~/.vim/colors
 
 cp ssh_config ~/.ssh/config
 
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
+
 # Append the bashrc to the bottom of the current bashrc
 
 bashrc >> ~/.bashrc
