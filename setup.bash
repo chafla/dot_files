@@ -1,6 +1,7 @@
 #!/bin/bash
 # Set up the dot files. Copy our current files to the directories where they belong.
 
+
 if [ ! -d "~/.vim" ]; then
 	mkdir ~/.vim
 fi
@@ -8,6 +9,8 @@ fi
 cp vimrc ~/.vim/.vimrc
 
 # update our vimrc
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 vim -c 'PluginInstall' -c 'qa!'
 
