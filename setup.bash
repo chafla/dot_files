@@ -24,7 +24,14 @@ cp ssh_config ~/.ssh/config
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
 
+read -p "Add bashrc options? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    cat bashrc > ~/.bashrc
+fi
+
 # Append the bashrc to the bottom of the current bashrc
 
-bashrc >> ~/.bashrc
+source ~/.bashrc
 
