@@ -43,7 +43,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Fuzzy search
 Plugin 'junegunn/fzf'
-" Easy folding
+" Folding support for python
 Plugin 'tmhedberg/SimpylFold'
 " Improved python indentation
 Plugin 'vim-scripts/indentpython.vim'
@@ -55,6 +55,8 @@ Plugin 'tpope/vim-commentary'
 Plugin 'godlygeek/tabular'
 " Static syntax checker for python, press F7 in a python file to run
 Plugin 'nvie/vim-flake8'
+" Improved JSON support
+Plugin 'elzr/vim-json'
 " Markdown support
 Bundle 'gabrielelana/vim-markdown'
 " Color schemes
