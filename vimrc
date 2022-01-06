@@ -32,23 +32,38 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+" git support
 Plugin 'tpope/vim-fugitive'
+" nice directory view
 Plugin 'scrooloose/nerdtree'
+" quoting/parenthesizing
+Plugin 'tpope/vim-surround'
+" Status-bar
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" Fuzzy search
 Plugin 'junegunn/fzf'
+" Easy folding
 Plugin 'tmhedberg/SimpylFold'
+" Improved python indentation
 Plugin 'vim-scripts/indentpython.vim'
+" Syntax checking
+Plugin 'vim-syntastic/syntastic'
+" Improved commenting
+Plugin 'tpope/vim-commentary'
+" Aligning text
+Plugin 'godlygeek/tabular'
+" Static syntax checker for python, press F7 in a python file to run
+Plugin 'nvie/vim-flake8'
+" Markdown support
+Bundle 'gabrielelana/vim-markdown'
+" Color schemes
+Plugin 'badacadabra/vim-archery'
+Plugin 'reedes/vim-colors-pencil'
+
 
 " Disable YCM by default as it is a super heavy dependency to carry around
 " Bundle 'Valloric/YouCompleteMe'
-
-Plugin 'vim-syntastic/syntastic'
-Plugin 'godlygeek/tabular'
-Plugin 'nvie/vim-flake8'
-Bundle 'gabrielelana/vim-markdown'
-Plugin 'badacadabra/vim-archery'
-Plugin 'reedes/vim-colors-pencil'
 
 call vundle#end()
 
