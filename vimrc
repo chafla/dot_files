@@ -34,7 +34,9 @@ let g:airline#extensions#tabline#fnamemod = ':t'
 Plugin 'VundleVim/Vundle.vim'
 " git support
 Plugin 'tpope/vim-fugitive'
-" nice directory view
+" Show git diffs down the sidebar
+Plugin 'airblade/vim-gitgutter'
+" File browser from vim
 Plugin 'scrooloose/nerdtree'
 " quoting/parenthesizing
 Plugin 'tpope/vim-surround'
