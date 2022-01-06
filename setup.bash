@@ -31,4 +31,31 @@ then
 	source ~/.bashrc
 fi
 
+# powerline stuff
+
+echo "Setting up powerline stuff"
+
+if [[ $(grep Microsoft /proc/version) ]]; then
+	echo "I see you're on WSL, You probably want to install the Cascadia powerline font if you haven't already."
+fi
+
+sudo apt install -y python3 python3-pip
+pip3 install --user powerline-status
+
+cat > ~/.bashrc <<- EOM
+# -- START POWERLINE --
+
+# Add this to your PATH if it’s not already declared
+export PATH=$PATH:$HOME/.local/bin
+
+# Powerline configuration
+if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
+    $HOME/.local/bin/powerline-daemon -q
+    POWERLINE_BASH_CONTINUATION=1
+    POWERLINE_BASH_SELECT=1
+    source $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
+fi
+
+# -- END POWERLINE
+EOM
 
