@@ -1,7 +1,7 @@
 #!/bin/bash
 # Set up the dot files. Copy our current files to the directories where they belong.
 
-
+echo "Configuring vim"
 if [ ! -d "~/.vim" ]; then
 	mkdir ~/.vim
 fi
@@ -16,10 +16,9 @@ vim -c 'PluginInstall' -c 'qa!'
 
 # Create a shortcut to make editing easier
 ln -s ~/.vim/.vimrc ~/.vimrc
-
 cp -r colors ~/.vim/colors
 
-cp ssh_config ~/.ssh/config
+echo "Installing fzf"
 
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
@@ -28,10 +27,8 @@ read -p "Add bashrc options? " -n 1 -r
 echo    # (optional) move to a new line
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-    cat bashrc > ~/.bashrc
+	cat bashrc > ~/.bashrc
+	source ~/.bashrc
 fi
 
-# Append the bashrc to the bottom of the current bashrc
-
-source ~/.bashrc
 
